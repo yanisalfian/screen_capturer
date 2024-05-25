@@ -17,13 +17,25 @@ dependencies:
   flutter:
     sdk: flutter
   screen_capturer_linux: 
-    path: ../screen_capturer_linux
+    git:
+      url: https://github.com/yanisalfian/screen_capturer.git
+      path: packages/screen_capturer_linux
+      ref: main
   screen_capturer_macos: 
-    path: ../screen_capturer_macos
+    git:
+      url: https://github.com/yanisalfian/screen_capturer.git
+      path: packages/screen_capturer_macos
+      ref: main
   screen_capturer_platform_interface: 
-    path: ../screen_capturer_platform_interface
+    git:
+      url: https://github.com/yanisalfian/screen_capturer.git
+      path: packages/screen_capturer_platform_interface
+      ref: main
   screen_capturer_windows: 
-    path: ../screen_capturer_windows
+    git:
+      url: https://github.com/yanisalfian/screen_capturer.git
+      path: packages/screen_capturer_windows
+      ref: main
 
 dev_dependencies:
   flutter_test:
