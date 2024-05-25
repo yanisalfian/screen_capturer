@@ -45,6 +45,7 @@ class ScreenCapturer {
     String? imagePath,
     bool copyToClipboard = true,
     bool silent = true,
+    int? display,
   }) async {
     File? imageFile;
     if (imagePath != null) {
@@ -62,6 +63,7 @@ class ScreenCapturer {
       imagePath: imagePath,
       copyToClipboard: copyToClipboard,
       silent: silent,
+      display: display,
     );
 
     Uint8List? imageBytes;

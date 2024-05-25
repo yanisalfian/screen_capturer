@@ -26,6 +26,7 @@ class _Spectacle extends Command with SystemScreenCapturer {
     String? imagePath,
     bool copyToClipboard = true,
     bool silent = true,
+    int? display,
   }) {
     return exec(
       [

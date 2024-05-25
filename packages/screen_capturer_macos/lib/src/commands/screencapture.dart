@@ -26,6 +26,7 @@ class _ScreenCapture extends Command with SystemScreenCapturer {
     String? imagePath,
     bool copyToClipboard = true,
     bool silent = true,
+    int? display,
   }) {
     return exec(
       [
@@ -33,6 +34,7 @@ class _ScreenCapture extends Command with SystemScreenCapturer {
         ...(copyToClipboard ? ['-c'] : []),
         ...(silent ? ['-x'] : []),
         ...(imagePath != null ? [imagePath] : []),
+        ...(display != null ? ['-D $display'] : [])
       ],
     );
   }

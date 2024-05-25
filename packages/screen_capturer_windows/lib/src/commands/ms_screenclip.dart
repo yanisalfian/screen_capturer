@@ -70,6 +70,7 @@ class _MsScreenclip with SystemScreenCapturer {
     String? imagePath,
     bool copyToClipboard = true,
     bool silent = true,
+    int? display,
   }) async {
     if (mode == CaptureMode.screen) {
       assert(imagePath != null);

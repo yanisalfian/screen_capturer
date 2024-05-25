@@ -52,6 +52,7 @@ class MockScreenCapturerPlatform
     String? imagePath,
     bool copyToClipboard = true,
     bool silent = true,
+    int? display,
   }) {
     throw UnimplementedError();
   }
