@@ -64,6 +64,7 @@ abstract class ScreenCapturerPlatform extends PlatformInterface {
     String? imagePath,
     bool copyToClipboard = true,
     bool silent = true,
+    int? display,
   }) {
     throw UnimplementedError();
   }
