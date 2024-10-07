@@ -33,8 +33,8 @@ class _ScreenCapture extends Command with SystemScreenCapturer {
         ..._knownCaptureModeArgs[mode]!,
         ...(copyToClipboard ? ['-c'] : []),
         ...(silent ? ['-x'] : []),
+        ...(display != null ? ['-D $display'] : []),
         ...(imagePath != null ? [imagePath] : []),
-        ...(display != null ? ['-D $display'] : [])
       ],
     );
   }
